@@ -1,7 +1,7 @@
 '''
 Epidemic modelling
 
-YOUR NAME
+Takumi Otsuka
 
 Functions for running a simple epidemiological simulation
 '''
@@ -22,12 +22,25 @@ def count_infected(city):
         simulation at the start of the day
     Returns (int): count of the number of people who are
       currently infected
+
+    Consider the syntax for infected cities to be 'I{int}'
+      - Eg: ['I0', 'I0', 'I2', 'S', 'R'] -> infected_cities = 3
+      - Eg: ['S', 'S', 'S', 'S'] -> infected_cities = 0
     '''
 
     # YOUR CODE HERE
+    infected_cities = 0         # Declare a variable to hold integer value for infected_cities
+    for city_label in city:           # Loop through the city list
+      # Assuming the cities are labelled with a single letter, 
+      # Check to see if the length of the city_label is more than 1
+      if len(city_label) > 1:
+        # Assuming it is true, check to see if the first index of the city_label is represented with 'I'
+        if city_label[0] == 'I':
+          # Increment infected_cities by 1
+          infected_cities += 1
 
     # REPLACE -1 WITH THE APPROPRIATE INTEGER
-    return -1
+    return infected_cities
 
 
 def has_an_infected_neighbor(city, position):
