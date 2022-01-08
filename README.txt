@@ -1,7 +1,10 @@
-Programming Assignment #1
+Epidemic Modeling
 -------------------------
 
-These are the files for Programming Assignment #1.
+Epidemic Modeling in Python, an assignment part of a series of workshops taught at 
+GDSC Waseda University by Jake Underland entitled "Python for Babies" 
+The prompt can be found at https://rpubs.com/jaked0626/sir_prompt 
+The files were not originally written by me, only modified. All due credit is give in the link above. 
 
 - sir.py: Skeleton code. You will write your code in this file.
 
